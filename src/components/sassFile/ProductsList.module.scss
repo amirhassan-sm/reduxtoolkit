@@ -1,0 +1,62 @@
+ .border {
+     border-top: 1px solid rgb(126, 112, 112);
+
+
+ }
+
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-around;
+     background-color: blanchedalmond;
+     bottom: 0px;
+     box-sizing: border-box;
+ }
+
+ .card {
+     flex-basis: 19%;
+     border: 1px solid rgb(126, 112, 112);
+     margin-top: 5px;
+     background-color: aliceblue;
+     border: 1px solid rgb(126, 112, 112);
+ }
+
+ .card:hover {
+     z-index: 1;
+     outline: 2px solid grey;
+     border-radius: 10px;
+     cursor: pointer;
+     width: 150%;
+
+
+     transition: 0.2s;
+
+ }
+
+ .footer {
+     padding: 5px;
+     @extend .border
+ }
+
+ .image {
+     width: 100%;
+ }
+
+ .price {
+    border-bottom: 1px solid rgb(126, 112, 112);
+     @extend .border
+    
+ }
+.btn{
+    width: 100%;
+    background-color: orange;
+    border-radius: 20px;
+    display: block;
+
+
+
+
+
+}
