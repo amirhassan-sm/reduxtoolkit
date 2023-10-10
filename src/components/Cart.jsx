@@ -5,7 +5,6 @@ import style from "./sassFile/Cart.module.scss"
 const Cart = () => {
     const result = useSelector(state => state.add);
 
-
     return (
         <div className={style.container}>
             <h4 className={style.text}>  :سبد خرید </h4>
@@ -16,7 +15,9 @@ const Cart = () => {
                 <p className={style.name} > {item.name} </p>
                 <br />
                 <p className={style.price}>ریال {item.price } :قیمت</p>
-                <p> : تعداد </p>
+                <p>{item.number} : تعداد </p>
+    
+                <p> ریال {item.total} :   قیمت کل این کالا</p>
                 </div>
                 
                 )

@@ -21,6 +21,9 @@
      margin-top: 5px;
      background-color: aliceblue;
      border: 1px solid rgb(126, 112, 112);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
  }
 
  .card:hover {
@@ -36,6 +39,8 @@
  }
 
  .footer {
+    flex-basis: 25%;
+
      padding: 5px;
      @extend .border
  }
@@ -46,9 +51,19 @@
 
  .price {
     border-bottom: 1px solid rgb(126, 112, 112);
+    flex-basis: 25%;
+
      @extend .border
+
     
  }
+ .imgContainer{
+    flex-basis: 25%;
+ }
+ .btnContainer{
+    flex-basis: 25%;
+
+}
 .btn{
     width: 100%;
     background-color: orange;
