@@ -1,12 +1,18 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import style from "./sassFile/Cart.module.scss"
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const result = useSelector(state => state.add);
+    
 
     return (
         <div className={style.container}>
+            <Link to={"/products"}>products</Link>
+            
+
+
             <h4 className={style.text}>  :سبد خرید </h4>
             <hr />
             {result.map(item => {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 import Cart from './components/Cart';
 import ProductsList from './components/ProductsList';
@@ -8,11 +9,15 @@ function App() {
 
       <div className='cartBox'>
         
-        <Cart/>
+        {/* <Cart/> */}
+       
+        {/* <Link  to={"/cart"}>sabade kharid</Link> */}
 
       </div>
       <div className="PoductList">
-      <ProductsList/>
+      {/* <ProductsList/> */}
+      <Link to={"/products"}>products</Link>
+
       </div>
  
     </div>

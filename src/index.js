@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import 'normalize.css'
 import { Store } from './redux/Store';
+import { RouterProvider } from 'react-router-dom';
+import mainroute from './routes/MainRooter';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={Store}>
-
-        <App />
+        <RouterProvider router={mainroute}>
+        </RouterProvider>
     </Provider>
 );
 
